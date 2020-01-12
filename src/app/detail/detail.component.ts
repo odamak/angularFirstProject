@@ -23,7 +23,7 @@ export class DetailComponent implements OnInit {
   onDisplayDetail(){
     this.displaySecret = !this.displaySecret;
     this.index +=1;
-    this.clickDates.push(this.index);
+    this.clickDates.push(this.index + " "+ new Date());
 
   }
 

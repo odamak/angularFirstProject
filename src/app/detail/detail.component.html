@@ -9,8 +9,8 @@
 </ng-template>
 <div style="padding: 20px; border: 1px solid green;">
     <div 
-    *ngFor="let clickDate of clickDates" 
-    [ngStyle]="{backgroundColor: clickDate>5 ? 'blue': 'white'}" 
-    [ngClass]="{clarity: clickDate>5}" >{{ clickDate }}
+    *ngFor="let clickDate of clickDates; let i = index" 
+    [ngStyle]="{backgroundColor: i>=4 ? 'blue': 'white'}" 
+    [ngClass]="{clarity: i>=4}" >{{ clickDate }}
     </div>
 </div>
